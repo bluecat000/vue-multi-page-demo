@@ -1,6 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="./assets/logo.png">
+            </a>
+            <p class="navbar-text">Signed in as Mark Otto</p>
+          </div>
+        </div>
+      </nav>
+    </header>
     <router-view></router-view>
   </div>
 </template>
@@ -18,9 +29,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-  img{
-    margin: 0;
+  header{
+    width: 100%;
+    nav{
+      a{
+        padding: 10px;
+      }
+      p{
+        text-align: left;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
 </style>
