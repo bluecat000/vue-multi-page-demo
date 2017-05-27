@@ -7,7 +7,7 @@
             <a class="navbar-brand" href="#">
               <img alt="Brand" src="./assets/logo.png">
             </a>
-            <p class="navbar-text">Signed in as Mark Otto</p>
+            <p class="navbar-text">Welcome to bluecat's blog</p>
           </div>
         </div>
       </nav>
