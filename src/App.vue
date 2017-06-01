@@ -7,7 +7,7 @@
             <a class="navbar-brand" href="#">
               <img alt="Brand" src="./assets/logo.png">
             </a>
-            <p class="navbar-text navbar-left">bluecat's blog</p>
+            <p class="navbar-text navbar-left">bluecat</p>
             <p class="navbar-text navbar-left"><a href="#" class="navbar-link">主页</a></p>
             <p class="navbar-text navbar-right"><a href="#"class="navbar-link">热门</a></p>
           </div>
