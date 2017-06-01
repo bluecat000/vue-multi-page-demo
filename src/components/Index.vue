@@ -1,16 +1,9 @@
 <template>
-  <div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img :src="img" alt="...">
-      <div class="caption">
-        <h3>{{msg}}</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
+  <div class="jumbotron">
+    <h1>Hello, world!</h1>
+    <p>...</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
   </div>
-</div>
 </template>
 
 <script>
