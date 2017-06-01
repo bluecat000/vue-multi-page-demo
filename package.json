@@ -2,7 +2,7 @@
   "name": "vue-blog",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "chenjianmin <chenjianmin@souhongwang.com>",
+  "author": "bluecat <bluecat000@outlook.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
