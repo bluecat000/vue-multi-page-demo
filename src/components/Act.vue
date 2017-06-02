@@ -1,7 +1,8 @@
 <template>
   <div class="act">
+    <!-- v-for不能用做根元素 -->
     <div class="row">
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-4" v-for="i in listNum">
         <div class="thumbnail">
           <img :src="img" alt="...">
           <div class="caption">
@@ -22,9 +23,20 @@ export default {
     return {
       img: require('../assets/logo.png')
     }
+  },
+  props: {
+    listNum: {
+      type: Number,
+      default: function () {
+        return 3
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
+.row{
+  margin: 0;
+}
 </style>

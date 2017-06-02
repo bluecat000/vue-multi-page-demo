@@ -3,7 +3,7 @@
     <div class="page-header">
       <h1>bluecat的博客<small>忠于创造</small></h1>
     </div>
-    <Act></Act>
+    <Act :listNum="listNum"></Act>
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
   data () {
     return {
       img: require('../assets/logo.png'),
-      msg: 'Welcome to bluecat\'s blog'
+      msg: 'Welcome to bluecat\'s blog',
+      listNum: 4
     }
   },
   components: {
