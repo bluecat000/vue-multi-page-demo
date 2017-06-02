@@ -1,8 +1,8 @@
 <template>
-  <div class="jumbotron">
-    <h1>Hello, world!</h1>
-    <p>...</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <div class="index">
+    <div class="page-header">
+      <h1>bluecat的博客<small>忠于创造</small></h1>
+    </div>
   </div>
 </template>
 
@@ -19,6 +19,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+.jumbotron{
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
 
 </style>

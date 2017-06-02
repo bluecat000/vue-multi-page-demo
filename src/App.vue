@@ -8,8 +8,8 @@
               <img alt="Brand" src="./assets/logo.png">
             </a>
             <p class="navbar-text navbar-left">bluecat</p>
-            <p class="navbar-text navbar-left"><a href="#" class="navbar-link">主页</a></p>
-            <p class="navbar-text navbar-right"><a href="#"class="navbar-link">热门</a></p>
+            <p class="navbar-text navbar-left"><router-link to="/" class="navbar-link">主页</router-link></p>
+            <p class="navbar-text navbar-left"><router-link to="/Act"class="navbar-link">热门</router-link></p>
           </div>
         </div>
       </nav>
