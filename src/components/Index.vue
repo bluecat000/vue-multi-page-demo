@@ -3,10 +3,12 @@
     <div class="page-header">
       <h1>bluecat的博客<small>忠于创造</small></h1>
     </div>
+    <Act></Act>
   </div>
 </template>
 
 <script>
+import Act from './Act'
 export default {
   name: 'Index',
   data () {
@@ -14,6 +16,9 @@ export default {
       img: require('../assets/logo.png'),
       msg: 'Welcome to bluecat\'s blog'
     }
+  },
+  components: {
+    Act
   }
 }
 </script>
