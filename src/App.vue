@@ -11,6 +11,8 @@
             <p class="navbar-text navbar-left"><router-link to="/" class="navbar-link">主页</router-link></p>
             <p class="navbar-text navbar-left"><router-link to="/Act"class="navbar-link">热门</router-link></p>
           </div>
+          <button type="submit" class="btn btn-default">登录</button>
+          <button type="submit" class="btn btn-default">注册</button>
         </div>
       </nav>
     </header>
@@ -25,27 +27,6 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  header{
-    width: 100%;
-    nav{
-      margin: 0;
-      a{
-        padding: 10px;
-      }
-      p{
-        text-align: left;
-      }
-      img{
-        width: 30px;
-        height: 30px;
-      }
-    }
-  }
-}
+@import "./assets/scss/app.scss";
+
 </style>
