@@ -46,15 +46,23 @@ export default {
     border-left: none;
     display: -webkit-box;
     img{
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
       flex: 1;
       margin: 0;
       vertical-align: middle;
     }
+    h3{
+      margin-top: 0;
+    }
      .caption{
        flex: 999;
     }
+  }
+}
+.col-sm-6:last-child{
+  .thumbnail{
+    border: none;
   }
 }
 </style>
