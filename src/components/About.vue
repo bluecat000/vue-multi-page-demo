@@ -14,7 +14,8 @@ export default {
 
 <style lang="scss">
   .about{
-    width: 50%;
+    padding: 0 20px;
+    width: 100%;
     margin: auto;
     text-align: left;
     p{
@@ -23,7 +24,7 @@ export default {
   }
   @media (min-width:1024px) {
     .about{
-      width: 600px;
+      width: 724px;
     }
   }
 </style>

@@ -7,7 +7,7 @@
             <a class="navbar-brand" href="#">
               <img alt="Brand" src="./assets/logo.png">
             </a>
-            <p class="navbar-text navbar-left">bluecat</p>
+            <p class="navbar-text navbar-left">Bluecat</p>
             <p class="navbar-text navbar-left"><router-link to="/" class="navbar-link">主页</router-link></p>
             <p class="navbar-text navbar-left"><router-link to="/About"class="navbar-link">关于</router-link></p>
           </div>
@@ -29,7 +29,7 @@ export default {
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; //字体清晰
   -moz-osx-font-smoothing: grayscale;
   header{
     width: 100%;
@@ -37,28 +37,23 @@ export default {
     nav{
       margin: 0;
       a{
+        text-decoration: none;
         padding: 10px;
-      }
-      p{
-        text-align: left;
       }
       img{
         width: 30px;
         height: 30px;
       }
-      .btn{
-        margin: 8px 5px;
-        float: right;
+      .navbar-header{
+        width: 100%;
       }
-      .container-fluid>:nth-child(2){
-        color: $white;
-        background: $main-green;
+      .container-fluid{
+        justify-content: center;
+        display: flex;
       }
-
       @media (min-width: 1024px){
         .navbar-header{
-          display: box;
-          width: 600px;
+          width: 724px;
           margin: auto;
         }
       }

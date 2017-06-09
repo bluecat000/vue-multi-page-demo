@@ -30,7 +30,7 @@ export default {
   }
   @media (min-width: 1024px){
     .index{
-      width: 600px;
+      width: 724px;
     }
   }
 </style>
