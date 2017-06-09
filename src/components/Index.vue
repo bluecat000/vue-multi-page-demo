@@ -1,8 +1,5 @@
 <template>
   <div class="index">
-    <div class="page-header">
-      <h1>bluecat的博客<small>忠于创造</small></h1>
-    </div>
     <Act :listNum="listNum"></Act>
   </div>
 </template>
@@ -25,9 +22,15 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.jumbotron{
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
+<style lang="scss">
+  .index{
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+  }
+  @media (min-width: 1024px){
+    .index{
+      width: 600px;
+    }
+  }
 </style>

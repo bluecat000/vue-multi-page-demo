@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/components/Index'
-import Act from '@/components/Act'
+import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: Index
     },
     {
-      path: '/Act',
-      name: 'Act',
-      component: Act
+      path: '/About',
+      name: 'About',
+      component: About
     }
   ]
 })

@@ -7,8 +7,7 @@
           <img :src="img" alt="...">
           <div class="caption">
             <h3>Thumbnail label</h3>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <p>Cras justo odio, dapibus ac faibh ultricies vehicula ut id elit.</p>
           </div>
         </div>
       </div>
@@ -38,5 +37,24 @@ export default {
 <style lang="scss">
 .row{
   margin: 0;
+}
+.col-sm-6{
+  width: 100%;
+  .thumbnail{
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    display: -webkit-box;
+    img{
+      width: 150px;
+      height: 150px;
+      flex: 1;
+      margin: 0;
+      vertical-align: middle;
+    }
+     .caption{
+       flex: 999;
+    }
+  }
 }
 </style>

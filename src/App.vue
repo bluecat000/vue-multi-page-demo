@@ -9,10 +9,8 @@
             </a>
             <p class="navbar-text navbar-left">bluecat</p>
             <p class="navbar-text navbar-left"><router-link to="/" class="navbar-link">主页</router-link></p>
-            <p class="navbar-text navbar-left"><router-link to="/Act"class="navbar-link">热门</router-link></p>
+            <p class="navbar-text navbar-left"><router-link to="/About"class="navbar-link">关于</router-link></p>
           </div>
-          <button type="submit" class="btn btn-default">登录</button>
-          <button type="submit" class="btn btn-default">注册</button>
         </div>
       </nav>
     </header>
@@ -27,5 +25,44 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/scss/app.scss";
+@import "./assets/scss/base.scss";
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  header{
+    width: 100%;
+    margin-bottom: 20px;
+    nav{
+      margin: 0;
+      a{
+        padding: 10px;
+      }
+      p{
+        text-align: left;
+      }
+      img{
+        width: 30px;
+        height: 30px;
+      }
+      .btn{
+        margin: 8px 5px;
+        float: right;
+      }
+      .container-fluid>:nth-child(2){
+        color: $white;
+        background: $main-green;
+      }
+
+      @media (min-width: 1024px){
+        .navbar-header{
+          display: box;
+          width: 600px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
 </style>
