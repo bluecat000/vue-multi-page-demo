@@ -15,7 +15,7 @@ export default {
     return {
       img: require('../assets/logo.png'),
       msg: 'Welcome to bluecat\'s blog',
-      listNum: 4
+      listNum: 6
     }
   },
   components: {
