@@ -2,12 +2,12 @@
   <div class="act">
     <!-- v-for不能用做根元素 -->
     <div class="row">
-      <div class="col-sm-6 col-md-4" v-for="i in listNum">
+      <div class="col-sm-6 col-md-4" v-for="i in list">
         <div class="thumbnail">
           <img :src="img" alt="...">
           <div class="caption">
-            <h3>Thumbnail label</h3>
-            <p>Cras justo odio, dapibus ac faibh ultricies vehicula ut id elit.</p>
+            <h3>{{ i != 'undefined' ? i.title : '' }}</h3>
+            <p>{{ i != 'undefined' ? i.desc : '' }}</p>
           </div>
         </div>
       </div>
@@ -21,7 +21,8 @@ export default {
   name: 'Act',
   data () {
     return {
-      img: require('../assets/logo.png')
+      img: require('../assets/logo.png'),
+      list: ''
     }
   },
   props: {
@@ -33,9 +34,10 @@ export default {
     }
   },
   created: function () {
-    axios.get('http://localhost/vue-simple/api/')
-    .then(function (data) {
-      console.log(data.data)
+    axios.get('http://localhost/vue-simple/api/?n=' + this.listNum)
+    .then((data) => {
+      data = data.data
+      this.list = Object.assign(this.list, data.employees)
     })
     .catch(function (err) {
       console.log(err)
