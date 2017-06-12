@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'Act',
   data () {
@@ -30,6 +31,15 @@ export default {
         return 3
       }
     }
+  },
+  created: function () {
+    axios.get('http://localhost/vue-simple/api/')
+    .then(function (data) {
+      console.log(data.data)
+    })
+    .catch(function (err) {
+      console.log(err)
+    })
   }
 }
 </script>
