@@ -5,7 +5,7 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img alt="Brand" src="./assets/logo.png">
+              <img alt="Brand" src="../../assets/logo.png">
             </a>
             <p class="navbar-text navbar-left">Bluecat</p>
             <p class="navbar-text navbar-left"><router-link to="/" class="navbar-link">主页</router-link></p>
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/scss/base.scss";
+@import "../../assets/scss/base.scss";
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
